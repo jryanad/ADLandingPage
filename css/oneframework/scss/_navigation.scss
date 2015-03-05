@@ -1,0 +1,31 @@
+/* Navigation
+========================================================================== */
+
+nav#{$base-nav-class} ul {
+  margin: $nomargin;
+  padding: $nopadding;
+  list-style-type: none;
+  @include clearfix;
+
+  li {
+    float: left;
+    @include rel-position(10);
+
+    a {
+      height: auto;
+      margin: $nomargin;
+      padding: 0px ceil($base-horizontal-padding * 2);
+      color: $tertiary-accent-color;
+      font-family: $base-font;
+      font-weight: 700;
+      text-decoration: none;
+      display: block;
+      @include uppercase;
+      @include transition(all, 0.3s, ease);
+
+      &:hover {
+        color: darken($tertiary-accent-color, 15%);
+      }
+    }
+  }
+}

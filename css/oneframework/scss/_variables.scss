@@ -1,0 +1,137 @@
+
+// Global Variables
+
+// Google Fonts ------------------ //
+
+@import url(http://fonts.googleapis.com/css?family=Trocchi);
+
+// Site Branding Colors ------------------- //
+
+$base-body-bg-color:      #ffffff;
+
+$default-color:           #dddddd;
+
+$primary-accent-color:    #152230; //Dark BLue
+$secondary-accent-color:  #0D9793; //Teal
+$tertiary-accent-color:   #3988D7; //Light Blue
+
+
+// Base Colors ------------------- //
+
+$white:     #fff !default;
+$black:     #000 !default;
+$grey:      #333 !default;
+$lightgrey: #f9f9f9 !default;
+$darkgrey:  #222 !default;
+
+// Base Typography -------------- //
+
+$base-font: Helvetica, Arial, sans-serif;
+$base-font-size: 16px !default;
+$base-font-weight: 300 !default;
+$base-font-color: #7d8081;
+$base-line-height:             1.428571429 !default; // 20/14
+$base-line-height-computed:    ceil($base-font-size * $base-line-height) !default; // 20px
+
+$base-link-color: $primary-accent-color !default;
+$base-link-hover-color: lighten($primary-accent-color, 5%) !default;
+
+$base-title-font:           'Trocchi', serif;
+$base-title-font-weight:    normal !default;
+$base-title-line-height:    1.1 !default;
+$base-title-color:          darken($base-font-color, 20%) !default;
+$base-title-letter-spacing: 0.5px !default;
+
+$base-title-h1: ceil($base-font-size * 2.25) !default; // 36px
+$base-title-h2: ceil($base-font-size * 1.85) !default; // 30px
+$base-title-h3: ceil($base-font-size * 1.60) !default; // 26px
+$base-title-h4: ceil($base-font-size * 1.35) !default; // 22px
+$base-title-h5: ceil($base-font-size * 1.25) !default; // 20px
+$base-title-h6: ceil($base-font-size * 1.10) !default; // 18px
+
+$lrg-text: ceil($base-font-size * 1.2) !default;
+$sm-text:  floor($base-font-size * 0.65) !default;
+
+
+// Spacing --------------------- //
+
+$nomargin:  0px !default;
+$nopadding: 0px !default;
+
+// Vertical //
+
+$base-vertical-margin:  10px !default;
+$base-vertical-padding: 10px !default;
+
+// Horizontal //
+
+$base-horizontal-margin:  10px !default;
+$base-horizontal-padding: 10px !default;
+
+// Navigation --------------------- //
+
+$base-nav-class:  ".primary-nav";
+$base-nav-height: 50px;
+
+$base-nav-bg-color:         $primary-accent-color;
+$base-nav-bg-hover-color:   darken($primary-accent-color, 15%);
+$base-nav-bg-active-color:  $base-nav-bg-hover-color;
+$base-nav-link-color:       $white;
+$base-nav-line-height:      $base-nav-height;
+
+$base-nav-dropdown-color:   $primary-accent-color;
+
+// Buttons --------------------- //
+
+$base-btn-class:  ".btn";
+$base-btn-color:  $default-color;
+$base-btn-height: ceil($base-font-size * 2.5);
+
+$base-btn-font-color:  #222 !default;
+$base-btn-font-size:   $base-font-size;
+$base-btn-font-weight: $base-font-weight;
+$base-btn-font-family: $base-font;
+
+// These are based on the sites accent colors, you can add/remove based on needs 
+// name -> pre-defined accent color -> font color
+$base-btn-accent-colors: ('primary' $primary-accent-color #fff) ('secondary' $secondary-accent-color #fff) ('tertiary' $tertiary-accent-color #fff);
+
+$base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d';
+$base-btn-sizes:  'small' 'medium' 'large' 'jumbo';
+
+// Accordion --------------------- //
+
+$base-acc-trigger-color:      $primary-accent-color;
+$base-acc-trigger-font-color: $white;
+$base-acc-trigger-font-size:  ceil($base-font-size + 2);
+$base-acc-detail-bg-color:    $lightgrey;
+$base-acc-detail-font-size:   $base-font-size;
+$base-acc-detail-font-color:  $base-font-color;
+
+
+// Tabs --------------------- //
+
+$base-tab-class:                ".tabs";
+$base-tabs-color:               $primary-accent-color;
+$base-tabs-active-color:        darken($base-tabs-color, 5%);
+$base-tabs-font-size:           $base-font-size;
+$base-tabs-font-color:          $white;
+$base-tabs-height:              ceil($base-font-size * 2.2);
+$base-tabs-content-bg-color:    $lightgrey;
+$base-tabs-content-font-color:  $base-font-color;
+
+// Tables --------------------- //
+
+$base-table-cell-padding:           8px !default;
+$base-table-condensed-cell-padding: 5px !default;
+$base-table-bg-color:               transparent !default;
+$base-table-bg-accent-color:        $lightgrey;
+$base-table-border-color:           darken($lightgrey, 10%);
+
+// Forms --------------------- //
+
+$base-input-background-color: $white;
+$base-input-border-color:     $default-color;
+$base-input-focus-color:      #4bc9e6;
+
+

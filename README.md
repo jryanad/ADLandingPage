@@ -12,3 +12,4 @@ You can change the _variables_ partial for the branding and template colors.
 
 Just clone the repo and then _cd_ into the project directory and run _npm install_ and it will start
 installing the grunt dependcies for the project. Then just run _grunt server_ and you're all set.
+
