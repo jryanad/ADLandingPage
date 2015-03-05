@@ -1,6 +1,6 @@
 <?php
 
-define("WEBMASTER_EMAIL", 'jason@34one.com');
+define("WEBMASTER_EMAIL", 'youremail@email.com');
 define("REPLY_TO", "$email");
 
 error_reporting (E_ALL ^ E_NOTICE);
