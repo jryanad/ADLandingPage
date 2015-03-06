@@ -8,7 +8,7 @@
 /* @Jason Ryan @David Ruscitti @Josh Wilson
 /* Comment or Remove what is unneccesary for your project
 ============================================================= */
-@import url(http://fonts.googleapis.com/css?family=Trocchi);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 /* Core Mixins
 ========================================================================== */
 /* 34ONE CSS Reset
@@ -189,20 +189,20 @@ textarea {
 
 body {
   background-color: #ffffff;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #7d8081;
+  color: #393939;
   line-height: 1.428571429;
 }
 
 a {
-  color: #152230;
+  color: #f9b24f;
   text-decoration: none;
   outline: none;
 }
 a:hover, a:focus {
-  color: #253b53;
+  color: #fbc880;
 }
 
 hr {
@@ -370,8 +370,8 @@ img.non-responsive {
 /* Typography
 ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
-  color: #4b4d4d;
-  font-family: "Trocchi", serif;
+  color: #393939;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.1;
 }
 
@@ -463,25 +463,25 @@ blockquote.left-side,
 blockquote.right-side {
   margin: 0 0 15px;
   padding: 10px;
-  color: #bebfc0;
+  color: #797979;
   text-align: left;
   line-height: 1.428571429;
 }
 
 blockquote,
 blockquote.left-side {
-  border-left: 4px solid #152230;
+  border-left: 4px solid #f9b24f;
 }
 
 blockquote.right-side {
   text-align: right !important;
   border-left: none;
-  border-right: 4px solid #152230;
+  border-right: 4px solid #f9b24f;
 }
 
 blockquote cite {
   margin-top: 5px;
-  color: #bebfc0;
+  color: #797979;
   font-size: 12px;
   display: block;
 }
@@ -498,7 +498,7 @@ blockquote cite:before {
   margin: 0 0 5px;
   padding: 0 24px;
   color: #222;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   text-decoration: none;
   text-align: center;
@@ -627,24 +627,24 @@ input.btn, button.btn {
 }
 
 .btn-primary {
-  background-image: linear-gradient(top, #1d2f42, #0d151e);
-  background-color: #152230;
+  background-image: linear-gradient(top, #fabd68, #f8a736);
+  background-color: #f9b24f;
   color: #fff;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset, 0px 1px 2px rgba(0, 0, 0, 0.15);
-  border-color: #05090d;
+  border-color: #f79c1e;
 }
 .btn-primary:hover, .btn-primary:focus {
-  background-image: linear-gradient(top, #253b53, #0d151e);
-  background-color: #0d151e;
+  background-image: linear-gradient(top, #fbc880, #f8a736);
+  background-color: #f8a736;
   color: #fff;
 }
 .btn-primary:active, .btn-primary.is-active, .btn-primary.active {
-  background-color: black;
+  background-color: #f39108;
   color: #fff;
 }
 
 .btn-flat-primary {
-  background-color: #152230;
+  background-color: #f9b24f;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -655,11 +655,11 @@ input.btn, button.btn {
   border: none;
 }
 .btn-flat-primary:hover, .btn-flat-primary:focus {
-  background-color: #0d151e;
+  background-color: #f8a736;
   color: #fff;
 }
 .btn-flat-primary:active, .btn-flat-primary.is-active, .btn-flat-primary.active {
-  background-color: black;
+  background-color: #f39108;
   color: #fff;
   box-shadow: none;
 }
@@ -670,26 +670,26 @@ input.btn, button.btn {
 
 .btn-border-primary {
   background: none;
-  color: #152230;
+  color: #f9b24f;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   box-shadow: none;
-  border: 2px solid #152230;
+  border: 2px solid #f9b24f;
 }
 .btn-border-primary:hover, .btn-border-primary:focus {
-  background-color: #152230;
+  background-color: #f9b24f;
   color: #fff;
   box-shadow: none;
-  border: 2px solid #152230;
+  border: 2px solid #f9b24f;
 }
 .btn-border-primary:active, .btn-border-primary.is-active, .btn-border-primary.active {
-  background-color: black;
+  background-color: #f39108;
   color: #fff;
   box-shadow: none;
-  border: 2px solid black;
+  border: 2px solid #f39108;
 }
 .btn-border-primary.disabled {
   box-shadow: none;
@@ -697,8 +697,8 @@ input.btn, button.btn {
 }
 
 .btn-3d-primary {
-  background-image: linear-gradient(top, #182737, #121d29);
-  background-color: #152230;
+  background-image: linear-gradient(top, #f9b659, #f9ae45);
+  background-color: #f9b24f;
   color: #fff;
   position: relative;
   top: 0px;
@@ -707,22 +707,22 @@ input.btn, button.btn {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #05090d, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  border: 1px solid #05090d;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #f79c1e, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #f79c1e;
 }
 .btn-3d-primary:hover, .btn-3d-primary:focus {
-  background-image: linear-gradient(top, #21364c, #131f2c);
-  background-color: #0d151e;
+  background-image: linear-gradient(top, #fac376, #f9b04a);
+  background-color: #f8a736;
   color: #fff;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #020405, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #f79814, 0px 8px 3px rgba(0, 0, 0, 0.3);
 }
 .btn-3d-primary:active, .btn-3d-primary.is-active, .btn-3d-primary.active {
-  background-image: linear-gradient(top, #121d29, #182737);
-  background-color: #0d151e;
+  background-image: linear-gradient(top, #f9ae45, #f9b659);
+  background-color: #f8a736;
   color: #fff;
   top: 5px;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 2px 0px #05090d, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  border: 1px solid #0d151e;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 2px 0px #f79c1e, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #f8a736;
 }
 .btn-3d-primary.disabled {
   box-shadow: none;
@@ -730,24 +730,24 @@ input.btn, button.btn {
 }
 
 .btn-secondary {
-  background-image: linear-gradient(top, #0faeaa, #0b807c);
-  background-color: #0D9793;
+  background-image: linear-gradient(top, #e55d5d, #df3131);
+  background-color: #e24747;
   color: #fff;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset, 0px 1px 2px rgba(0, 0, 0, 0.15);
-  border-color: #096865;
+  border-color: #d52121;
 }
 .btn-secondary:hover, .btn-secondary:focus {
-  background-image: linear-gradient(top, #11c6c1, #0b807c);
-  background-color: #0b807c;
+  background-image: linear-gradient(top, #e97373, #df3131);
+  background-color: #df3131;
   color: #fff;
 }
 .btn-secondary:active, .btn-secondary.is-active, .btn-secondary.active {
-  background-color: #07514e;
+  background-color: #be1e1e;
   color: #fff;
 }
 
 .btn-flat-secondary {
-  background-color: #0D9793;
+  background-color: #e24747;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -758,11 +758,11 @@ input.btn, button.btn {
   border: none;
 }
 .btn-flat-secondary:hover, .btn-flat-secondary:focus {
-  background-color: #0b807c;
+  background-color: #df3131;
   color: #fff;
 }
 .btn-flat-secondary:active, .btn-flat-secondary.is-active, .btn-flat-secondary.active {
-  background-color: #07514e;
+  background-color: #be1e1e;
   color: #fff;
   box-shadow: none;
 }
@@ -773,26 +773,26 @@ input.btn, button.btn {
 
 .btn-border-secondary {
   background: none;
-  color: #0D9793;
+  color: #e24747;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   box-shadow: none;
-  border: 2px solid #0D9793;
+  border: 2px solid #e24747;
 }
 .btn-border-secondary:hover, .btn-border-secondary:focus {
-  background-color: #0D9793;
+  background-color: #e24747;
   color: #fff;
   box-shadow: none;
-  border: 2px solid #0D9793;
+  border: 2px solid #e24747;
 }
 .btn-border-secondary:active, .btn-border-secondary.is-active, .btn-border-secondary.active {
-  background-color: #07514e;
+  background-color: #be1e1e;
   color: #fff;
   box-shadow: none;
-  border: 2px solid #07514e;
+  border: 2px solid #be1e1e;
 }
 .btn-border-secondary.disabled {
   box-shadow: none;
@@ -800,8 +800,8 @@ input.btn, button.btn {
 }
 
 .btn-3d-secondary {
-  background-image: linear-gradient(top, #0ea09c, #0c8e8a);
-  background-color: #0D9793;
+  background-image: linear-gradient(top, #e35050, #e13e3e);
+  background-color: #e24747;
   color: #fff;
   position: relative;
   top: 0px;
@@ -810,22 +810,22 @@ input.btn, button.btn {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #096865, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  border: 1px solid #096865;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #d52121, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #d52121;
 }
 .btn-3d-secondary:hover, .btn-3d-secondary:focus {
-  background-image: linear-gradient(top, #10bdb8, #0d928e);
-  background-color: #0b807c;
+  background-image: linear-gradient(top, #e86a6a, #e14343);
+  background-color: #df3131;
   color: #fff;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #085f5c, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #cc2020, 0px 8px 3px rgba(0, 0, 0, 0.3);
 }
 .btn-3d-secondary:active, .btn-3d-secondary.is-active, .btn-3d-secondary.active {
-  background-image: linear-gradient(top, #0c8e8a, #0ea09c);
-  background-color: #0b807c;
+  background-image: linear-gradient(top, #e13e3e, #e35050);
+  background-color: #df3131;
   color: #fff;
   top: 5px;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 2px 0px #096865, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  border: 1px solid #0b807c;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 2px 0px #d52121, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #df3131;
 }
 .btn-3d-secondary.disabled {
   box-shadow: none;
@@ -833,24 +833,24 @@ input.btn, button.btn {
 }
 
 .btn-tertiary {
-  background-image: linear-gradient(top, #4e95db, #297bcd);
-  background-color: #3988D7;
+  background-image: linear-gradient(top, #00d3ee, #00a5bb);
+  background-color: #00bcd4;
   color: #fff;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset, 0px 1px 2px rgba(0, 0, 0, 0.15);
-  border-color: #256eb8;
+  border-color: #008fa1;
 }
 .btn-tertiary:hover, .btn-tertiary:focus {
-  background-image: linear-gradient(top, #63a1e0, #297bcd);
-  background-color: #297bcd;
+  background-image: linear-gradient(top, #08e3ff, #00a5bb);
+  background-color: #00a5bb;
   color: #fff;
 }
 .btn-tertiary:active, .btn-tertiary.is-active, .btn-tertiary.active {
-  background-color: #2162a3;
+  background-color: #007888;
   color: #fff;
 }
 
 .btn-flat-tertiary {
-  background-color: #3988D7;
+  background-color: #00bcd4;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -861,11 +861,11 @@ input.btn, button.btn {
   border: none;
 }
 .btn-flat-tertiary:hover, .btn-flat-tertiary:focus {
-  background-color: #297bcd;
+  background-color: #00a5bb;
   color: #fff;
 }
 .btn-flat-tertiary:active, .btn-flat-tertiary.is-active, .btn-flat-tertiary.active {
-  background-color: #2162a3;
+  background-color: #007888;
   color: #fff;
   box-shadow: none;
 }
@@ -876,26 +876,26 @@ input.btn, button.btn {
 
 .btn-border-tertiary {
   background: none;
-  color: #3988D7;
+  color: #00bcd4;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   box-shadow: none;
-  border: 2px solid #3988D7;
+  border: 2px solid #00bcd4;
 }
 .btn-border-tertiary:hover, .btn-border-tertiary:focus {
-  background-color: #3988D7;
+  background-color: #00bcd4;
   color: #fff;
   box-shadow: none;
-  border: 2px solid #3988D7;
+  border: 2px solid #00bcd4;
 }
 .btn-border-tertiary:active, .btn-border-tertiary.is-active, .btn-border-tertiary.active {
-  background-color: #2162a3;
+  background-color: #007888;
   color: #fff;
   box-shadow: none;
-  border: 2px solid #2162a3;
+  border: 2px solid #007888;
 }
 .btn-border-tertiary.disabled {
   box-shadow: none;
@@ -903,8 +903,8 @@ input.btn, button.btn {
 }
 
 .btn-3d-tertiary {
-  background-image: linear-gradient(top, #418dd9, #3183d5);
-  background-color: #3988D7;
+  background-image: linear-gradient(top, #00c5de, #00b3ca);
+  background-color: #00bcd4;
   color: #fff;
   position: relative;
   top: 0px;
@@ -913,22 +913,22 @@ input.btn, button.btn {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #256eb8, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  border: 1px solid #256eb8;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #008fa1, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #008fa1;
 }
 .btn-3d-tertiary:hover, .btn-3d-tertiary:focus {
-  background-image: linear-gradient(top, #5b9cde, #3585d6);
-  background-color: #297bcd;
+  background-image: linear-gradient(top, #00e0fd, #00b7cf);
+  background-color: #00a5bb;
   color: #fff;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #2369af, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 7px 0px #008697, 0px 8px 3px rgba(0, 0, 0, 0.3);
 }
 .btn-3d-tertiary:active, .btn-3d-tertiary.is-active, .btn-3d-tertiary.active {
-  background-image: linear-gradient(top, #3183d5, #418dd9);
-  background-color: #297bcd;
+  background-image: linear-gradient(top, #00b3ca, #00c5de);
+  background-color: #00a5bb;
   color: #fff;
   top: 5px;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 2px 0px #256eb8, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  border: 1px solid #297bcd;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px rgba(255, 255, 255, 0.15) inset, 0px 2px 0px #008fa1, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #00a5bb;
 }
 .btn-3d-tertiary.disabled {
   box-shadow: none;
@@ -1015,8 +1015,8 @@ input[type="checkbox"] {
   width: 100%;
   margin-bottom: 5px;
   padding: 8px;
-  color: #7d8081;
-  font-family: Helvetica, Arial, sans-serif;
+  color: #393939;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.428571429;
   display: block;
   -webkit-appearance: none;
