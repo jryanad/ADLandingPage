@@ -3,18 +3,19 @@
 
 // Google Fonts ------------------ //
 
-@import url(http://fonts.googleapis.com/css?family=Trocchi);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 
 // Site Branding Colors ------------------- //
 
 $base-body-bg-color:      #ffffff;
 
-$default-color:           #dddddd;
+$default-color:           #dddddd; // Grey
+$primary-accent-color:    #f9b24f; // Orange
+$secondary-accent-color:  #e24747; // Red
+$tertiary-accent-color:   #00bcd4; // Light Blue
 
-$primary-accent-color:    #152230; //Dark BLue
-$secondary-accent-color:  #0D9793; //Teal
-$tertiary-accent-color:   #3988D7; //Light Blue
-
+$body-font-color:    #393939;
+$heading-font-color: #393939;
 
 // Base Colors ------------------- //
 
@@ -26,20 +27,20 @@ $darkgrey:  #222 !default;
 
 // Base Typography -------------- //
 
-$base-font: Helvetica, Arial, sans-serif;
+$base-font: 'Open Sans', sans-serif;
 $base-font-size: 16px !default;
 $base-font-weight: 300 !default;
-$base-font-color: #7d8081;
+$base-font-color: $body-font-color;
 $base-line-height:             1.428571429 !default; // 20/14
 $base-line-height-computed:    ceil($base-font-size * $base-line-height) !default; // 20px
 
 $base-link-color: $primary-accent-color !default;
 $base-link-hover-color: lighten($primary-accent-color, 5%) !default;
 
-$base-title-font:           'Trocchi', serif;
+$base-title-font:           $base-font !default;
 $base-title-font-weight:    normal !default;
 $base-title-line-height:    1.1 !default;
-$base-title-color:          darken($base-font-color, 20%) !default;
+$base-title-color:          $heading-font-color;
 $base-title-letter-spacing: 0.5px !default;
 
 $base-title-h1: ceil($base-font-size * 2.25) !default; // 36px
