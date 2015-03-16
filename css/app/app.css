@@ -62,7 +62,7 @@
 
 .product-img-wrap {
 	position: relative;
-	bottom: -248px;
+	bottom: -260px;
 	z-index: 10;
 }
 
@@ -126,13 +126,13 @@ ul.product-list li i {
 /* Service Section
 ================================ */
 
-.service-box, .icon-box {
+.icon-box {
 	padding-left: 80px;
 	margin-bottom: 30px;
 	position: relative;
 }
 
-.service-box i, .icon-box i {
+.icon-box i {
 	background-color: #00bcd4;
 	width: 60px;
 	height: 60px;
@@ -220,7 +220,7 @@ ul.product-list li i {
 
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
 
-	.product-img-wrap { bottom: -242px; }
+	.product-img-wrap { bottom: -246px; }
 
 }
 
@@ -264,9 +264,21 @@ ul.product-list li i {
 @media only screen and (max-width: 767px) {
 
 	.hidden-mobile { display: none; }
-
 	.header-wrap { padding-bottom: 100px; }
-
 	.img-wrap.about-section { padding-top: 0px; padding-bottom: 40px; }
 
+}
+
+@media only screen and (max-width: 479px) {
+	.top-social-icons ul li a, 
+  .bottom-social-icons ul li a {
+  	margin: 0 10px 10px 10px;
+  }
+
+  .top-social-icons ul li:first-child a, 
+	.bottom-social-icons ul li:first-child a {
+		margin-left: 10px;
+	}
+
+	.hero-content-container { padding-top: 40px; }
 }
