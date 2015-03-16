@@ -2,10 +2,11 @@
 /* Form Elements
 ========================================================================== */
 
-.form .row,
-.form .row + .row { margin-bottom: 20px; }
-
-span.required { color: #ff0000; margin-right: 4px; }
+// For Skeleton .row
+form > .row,
+.row + .row {
+	margin-bottom: 10px;
+}
 
 fieldset {
 	background-color: lighten($default-color, 10%);
@@ -38,7 +39,6 @@ label {
 	font-family: $base-font;
 	line-height: $base-line-height;
 	display: block;
-	-webkit-appearance: none;
 	@include border(1px, solid, $base-input-border-color);
 	@include transition(border-color, 0.3s, ease);
 	

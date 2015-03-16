@@ -23,6 +23,9 @@ $base-btn-3d-build: false;
   @else if $base-btn-style == 'border' {
       $base-btn-border-build: true;
   }
+	@else if $base-btn-style == 'white-border' {
+      $base-btn-white-border-build: true;
+  }
   @else if $base-btn-style == '3d' {
       $base-btn-3d-build: true;
   }
@@ -47,7 +50,7 @@ $base-btn-fs-jumbo:  inherit;
 	background-color: $base-btn-color;
 	height: $base-btn-height;
 	margin: 0 0 5px;
-	padding: 0 ($base-btn-height * .6);
+	padding: 0 ($base-btn-height * .8);
 	color: $base-btn-font-color;
 	font-family: $base-btn-font-family;
 	font-weight: $base-btn-font-weight;
@@ -127,6 +130,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     $base-btn-accent-font-color: $base-btn-font-color;
     background: none;
     color: $base-btn-accent-font-color;
+		line-height: ceil($base-btn-height - 4);
     box-shadow: none;
     @include transition(all, 0.3s, ease);
     border: 2px solid $base-btn-accent-bg-color;
@@ -141,6 +145,37 @@ input#{$base-btn-class}, button#{$base-btn-class} {
       background-color: darken($base-btn-accent-bg-color, 15%);
       box-shadow: none;
       border: 2px solid darken($base-btn-accent-bg-color, 15%);
+    }
+
+    &.disabled {
+      box-shadow: none;
+      -webkit-appearance: none;
+    }
+  }
+}
+
+// White Border Button Build
+@if $base-btn-flat-build {
+  #{$base-btn-class}-white-border {
+    background: none;
+    color: $white;
+		line-height: ceil($base-btn-height - 4);
+    box-shadow: none;
+    @include transition(all, 0.3s, ease);
+    border: 2px solid $white;
+
+    &:hover, &:focus {
+      background-color: $white;
+			color: $base-btn-font-color;
+      box-shadow: none;
+      border: 2px solid $white;
+    }
+
+    &:active, &.is-active, &.active {
+      background-color: darken($white, 2%);
+			color: darken($base-btn-color, 50%);
+      box-shadow: none;
+      border: 2px solid darken($white, 2%);
     }
 
     &.disabled {
@@ -260,6 +295,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     #{$base-btn-class}-border-#{$base-btn-accent-name} {
     	background: none;
       color: $base-btn-accent-bg-color;
+			line-height: ceil($base-btn-height - 4);
       @include transition(all, 0.3s, ease);
       box-shadow: none;
       border: 2px solid $base-btn-accent-bg-color;
