@@ -37,6 +37,9 @@ hr {
 	@include box-sizing(content-box);
 }
 
+*::-moz-selection { background: $primary-accent-color; color: $white; }
+*::selection { background: $primary-accent-color; color: $white; }
+
 
 /* Sizing Classes -------------*/
 

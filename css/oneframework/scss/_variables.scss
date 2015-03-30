@@ -1,5 +1,4 @@
-
-/* Global Variables
+// Global Variables
 // 
 // Table of Contents
 //
@@ -14,7 +13,8 @@
 // 9)  Tabs
 // 10) Tables
 // 11) Forms
-========================================================================== */
+// 12) Responsive Menu
+// ========================================================================== //
 
 // 1. Google Font Import ------------------- //
 
@@ -35,7 +35,6 @@ $body-font-color: #333333;
 
 $heading-font: $body-font;
 $heading-font-color: #222222;
-
 
 // 3. Base Colors ------------------- //
 
@@ -65,7 +64,7 @@ $base-title-h5: ceil($base-font-size * 1.25) !default; // 20px
 $base-title-h6: ceil($base-font-size * 1.10) !default; // 18px
 
 $base-title-font:           $heading-font !default;
-$base-title-font-weight:    500 !default;
+$base-title-font-weight:    400 !default;
 $base-title-line-height:    1.1 !default;
 $base-title-color:          $heading-font-color !default;
 
@@ -135,12 +134,13 @@ $base-acc-detail-font-color:  $base-font-color;
 // 9. Tabs --------------------- //
 
 $base-tab-class:                ".tabs";
-$base-tabs-color:               $primary-accent-color;
-$base-tabs-active-color:        darken($base-tabs-color, 5%);
+$base-tabs-color:               darken($lightgrey, 5%);
+$base-tabs-active-color:        $primary-accent-color;
 $base-tabs-font-size:           $base-font-size;
-$base-tabs-font-color:          $white;
+$base-tabs-font-color:          $base-font-color;
 $base-tabs-height:              ceil($base-font-size * 3);
-$base-tabs-content-bg-color:    $lightgrey;
+$base-tabs-content-bg-color:    $white;
+$base-tabs-accent-border-color: $base-tabs-active-color;
 $base-tabs-content-font-color:  $base-font-color;
 
 // 10. Tables --------------------- //
@@ -156,5 +156,20 @@ $base-table-border-color:           darken($lightgrey, 10%);
 $base-input-background-color: $white;
 $base-input-border-color:     $default-color;
 $base-input-focus-color:      #4bc9e6;
+
+// 12. Responsive Menu Custom Theme
+
+$custom-menu-class:                 ".mm-custom";
+$custom-menu-page-shadow:           0 0 10px rgba(0, 0, 0, 0.3);
+$custom-menu-border-color:          rgba(0, 0, 0, 0.1);
+$custom-menu-background-color:      #39424D;
+$custom-menu-emphasized-bg-color:   rgba(0, 0, 0, 0.1);
+$custom-menu-highlighted-bg-color:  rgba(0, 0, 0, 0.03);
+$custom-menu-text-color:            rgba(255, 255, 255, 0.8);
+$custom-menu-dimmed-text-color:     rgba(255, 255, 255, 0.8);
+$custom-menu-input-bg-color:        rgba(0, 0, 0, 0.1);  
+
+
+
 
 

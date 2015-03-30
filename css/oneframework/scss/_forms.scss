@@ -1,12 +1,5 @@
 
-/* Form Elements
-========================================================================== */
-
-// For Skeleton .row
-form > .row,
-.row + .row {
-	margin-bottom: 10px;
-}
+/* Form Elements */
 
 fieldset {
 	background-color: lighten($default-color, 10%);
@@ -56,6 +49,16 @@ label {
 }
 
 textarea {
+	width: 100%;
+	min-height: 200px;
+	margin-bottom: ceil($base-vertical-margin / 2);
+	padding: ceil($base-vertical-padding - 2);
+	color: $base-font-color;
+	font-family: $base-font;
+	line-height: $base-line-height;
+	display: block;
+	@include border(1px, solid, $base-input-border-color);
+	@include transition(border-color, 0.3s, ease);
 	resize: vertical;
 }
 

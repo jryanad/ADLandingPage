@@ -2,9 +2,10 @@
 ========================================================================== */
 
 ul.tabs {
-	margin: 0 0 -1px;
+	margin: 0;
 	padding: 0px;
 	display: block;
+	border-bottom: 3px solid $base-tabs-accent-border-color;
 }
 
 ul.tabs {
@@ -36,10 +37,17 @@ ul.tabs li a {
 	text-decoration: none;
 	line-height: $base-tabs-height;
 	display: block;
+	@include transition(all, 0.3s, ease);
+}
+
+ul.tabs li a:hover {
+	background-color: $base-tabs-active-color;
+	color: $white;
 }
 
 ul.tabs li a.active {
 	background-color: $base-tabs-active-color;
+	color: $white;
 	margin: 0px;
 }
 
@@ -50,9 +58,9 @@ ul.tabs li:first-child a.active {
 ul.tabs-content { 
 	margin: 0px;
 	padding: 0px;
-	border-color: darken($base-tabs-content-bg-color, 10%);
-	border-style: solid;
-	border-width: 1px;
+	border-left:   1px solid darken($base-tabs-content-bg-color, 10%);
+	border-right:  1px solid darken($base-tabs-content-bg-color, 10%);
+	border-bottom: 1px solid darken($base-tabs-content-bg-color, 10%);
 }
 
 ul.tabs-content > li { 

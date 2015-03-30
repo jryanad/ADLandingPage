@@ -8,9 +8,6 @@
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
-// Variables
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 // Breakpoints
 $breakpoint-mobile    : "min-width: 480px" !default;
 $breakpoint-phablet   : "min-width: 550px" !default;
@@ -147,6 +144,14 @@ $column-margin: 4% !default; // space between columns
 
   .offset-by-one-half.column,
   .offset-by-one-half.column   { margin-left: grid-offset-length(6);  }
+}
+
+// Form Handling 
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+form > .row,
+form .row + .row {
+  margin-bottom: 10px;
 }
 
 // Clearing

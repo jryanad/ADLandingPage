@@ -210,6 +210,11 @@
     margin-left: 52%;
   }
 }
+form > .row,
+form .row + .row {
+  margin-bottom: 10px;
+}
+
 .container:after,
 .row:after {
   content: "";

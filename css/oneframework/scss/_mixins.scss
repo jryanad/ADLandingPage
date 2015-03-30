@@ -1,7 +1,7 @@
-/* Core Mixins
-========================================================================== */
 
-// Clearfix ---------- //
+// Core Mixins ------------ //
+
+// Clearfix
 
 @mixin clearfix() {
   &:before,
@@ -14,7 +14,7 @@
   }
 }
 
-// Peek-a-boo ---------- //
+// Peek-a-boo
 
 @mixin show($display: block) {
   display: $display;
@@ -25,7 +25,7 @@
   visibility: hidden !important;
 }
 
-// Typography ---------------- //
+// Typography
 
 @mixin uppercase { text-transform: uppercase; }
 
@@ -39,7 +39,7 @@
 
 @mixin outline { outline: none; }
 
-// Centered Content Block ---------- //
+// Centered Content Block
 
 @mixin centered-content-block () {
   margin-left: auto;
@@ -47,7 +47,7 @@
   display: table;
 }
 
-// Fixed Positioning ---------- //
+// Fixed Positioning
 
 @mixin fx-position ($top, $right, $bottom, $left, $z-index) {
   position: fixed;
@@ -58,7 +58,7 @@
   z-index: $z-index;
 }
 
-// Absolute Positioning ------ //
+// Absolute Positioning
 
 @mixin ab-position ($top, $right, $bottom, $left, $z-index) {
   position: absolute;
@@ -69,14 +69,14 @@
   z-index: $z-index;
 }
 
-// Relative Positioning ------ //
+// Relative Positioning
 
 @mixin rel-position ($z-index) {
   position: relative;
   z-index: $z-index;
 }
 
-// Box Sizing --------------- //
+// Box Sizing
 
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model;
@@ -84,14 +84,14 @@
           box-sizing: $box-model;
 }
 
-// Box-Shadow --------------- //
+// Box-Shadow
 
 @mixin box-shadow($shadow...) {
   -webkit-box-shadow: $shadow;
           box-shadow: $shadow;
 }
 
-// Borders ------------------ //
+// Borders
 
 @mixin border($width, $style, $color) {
   border-width: $width;
@@ -99,7 +99,7 @@
   border-color: $color;
 }
 
-// Border Radius ------------ //
+// Border Radius
 
 @mixin border-radius($radius...) {
   -webkit-border-radius: $radius;
@@ -141,7 +141,7 @@
           background-clip: padding-box;
 }
 
-// Gradients ---------------- //
+// Gradients
 
 // Linear Gradient
 
@@ -149,12 +149,14 @@
   background-color: $fromColor;
   background-image: -webkit-linear-gradient(top, $fromColor, $toColor);
   background-image:         linear-gradient(to bottom, $fromColor, $toColor);
+  -ms-filter:       progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
 @mixin linear-gradient-inverse($fromColor, $toColor) {
   background-color: $fromColor;
   background-image: -webkit-linear-gradient(bottom, $fromColor, $toColor);
   background-image:         linear-gradient(to top, $fromColor, $toColor);
+  -ms-filter:       progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
 // Linear Pattern Gradient
@@ -164,6 +166,7 @@
   background-image: url($pattern); /* Fallback */
   background-image: url($pattern),   -webkit-linear-gradient(top, $fromColor, $toColor);
   background-image: url($pattern),   linear-gradient(to bottom, $fromColor, $toColor);
+  -ms-filter:       progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
 @mixin pattern-linear-gradient-inverse($pattern, $fromColor, $toColor) {
@@ -171,9 +174,10 @@
   background-image: url($pattern); /* Fallback */
   background-image: url($pattern),   -webkit-linear-gradient(bottom, $fromColor, $toColor);
   background-image: url($pattern),   linear-gradient(to top, $fromColor, $toColor);
+  -ms-filter:       progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
-// CSS3 Transitions --------- //
+// CSS3 Transitions
 
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
@@ -183,7 +187,7 @@
     transition: $transition-property $transition-time $method;
 }
 
-// CSS3 Transformations ----- //
+// CSS3 Transformations
 
 @mixin scale($ratio...) {
   -webkit-transform: scale($ratio);
@@ -264,7 +268,7 @@
   transform-origin: $origin;
 }
 
-// Placeholder text --------- //
+// Placeholder text
 
 @mixin placeholder($color: $base-input-border-color) {
     // Firefox
@@ -276,7 +280,7 @@
   &::-webkit-input-placeholder { color: darken($color, 20%); } // Safari and Chrome
 }
 
-// Opacity --------- //
+// Opacity
 
 @mixin opacity($opacity) {
   opacity: $opacity;
