@@ -30,8 +30,7 @@ function initialize() {
 
   // Location Pin
 	// Copy this block to add more markers on the map
-	
-  var myIcon = new google.maps.MarkerImage("http://cdn.audiologydesign.com/ppc/images/map-marker.png", null, null, null, new google.maps.Size(30,30));
+	var myIcon = new google.maps.MarkerImage("http://cdn.audiologydesign.com/ppc/images/map-marker.png", null, null, null, new google.maps.Size(30,30));
                                      
   marker = new google.maps.Marker({
     position: new google.maps.LatLng(29.8047377,-95.4077045),
@@ -50,7 +49,6 @@ function initialize() {
   })(marker, i));
 
   map.fitBounds(bounds);
-	
 	// End Location Block
 
   //Set Zoom Level 1-21 Default is 10
