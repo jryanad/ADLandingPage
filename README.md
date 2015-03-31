@@ -25,7 +25,7 @@ documentation on how to use either plugin can be found on both respective github
 
 ###How to update the map 
 
-Navigate to _js/vendor/custom.gmap.js_ to change up the center point point of the map, and additional locations and markers.
+Navigate to _js/vendor/custom.gmap.js_ to change up the center point point of the map, and to add additional locations and markers.
 
 Line 8 & Line 64 specify the "center" of the map. If a practice has only one location, you would place the Lat & Long of
 that location in both places, as well as the marker for the map. If the practice has more than 1 location, use best judgement 
