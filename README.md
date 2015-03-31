@@ -33,8 +33,8 @@ as to where the center would be between all respective locations.
 
 Line 24 is the HTML container ID in which the map will be placed. You may change this but not necessary.
 
-Lines 31 to 52 is the entire block that specifies a locations marker and info window content. To add additional locations, copy lines 31 to 52 and paste 
-below the existing location. Line 36 specifies that locations Lat & Long and must be updated for each location you add.
+Lines 31 to 52 is the entire block that specifies a locations' marker and info window content. To add additional locations, copy lines 31 to 52 and paste 
+below the existing location. Line 36 specifies that locations' Lat & Long and must be updated for each location you add.
 
 ####Map Extras
 
