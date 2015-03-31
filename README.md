@@ -42,5 +42,5 @@ The map is responsive and is set to remove _dragging_ capabilities on mobile dev
 viewport changes.
 
 The map is styled using a template from [SnazzyMaps](https://snazzymaps.com/) and is defined on line 10. You may change this out at any time, or if you're 
-feeling creative, style your own map. just replace the _flatMap.js_ file with your own and add the name of your map theme
+feeling creative, style your own map. Just replace the _flatMap.js_ file with your own and add the name of your map theme
 to line 10 of _custom.gmap.js_
