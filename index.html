@@ -25,7 +25,7 @@
         <div class="row">
           <div class="six columns">
             <div class="header-call-container">
-              <a href="tel:888-234-5454">Call: 888-234-5454</a>
+               <a onClick="ga('send', 'event', 'Phone', 'Call', 'Click-to-Call');" href="tel:1-888-234-5454">Call: 888-234-5454</a>
             </div>
           </div><!-- six columns -->
 
@@ -85,12 +85,12 @@
 
               <div class="hero-body-content">
                 <p>
-                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. 
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
                 </p>
               </div>
 
               <div class="hero-button">
-                <a class="btn btn-white-border" href="#contact-section">Contact Us</a>
+                <a class="btn btn-white-border" href="#contact-section" onClick="ga('send', 'event', 'Contact', 'Contact-Section', 'Contact-Button');">Contact Us</a>
               </div>
             </div>
           </div><!--/.six columns-->
@@ -299,7 +299,7 @@
                   <div class="row">
                     <div class="twelve columns">
                       <div class="form-btn-wrapper">
-                        <button class="btn btn-rounded btn-flat-secondary" type="submit">Submit</button>
+                        <button onClick="ga('send', 'event', 'Form', 'Contact-Submission', 'Contact-Form');" class="btn btn-rounded btn-flat-secondary" type="submit">Submit</button>
                         <div class="loading"></div>
                       </div>
                     </div>
