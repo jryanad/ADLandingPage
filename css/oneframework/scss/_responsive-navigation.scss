@@ -1,6 +1,5 @@
-
-/* Responsive Navigation
-========================================================================== */
+/* Responsive Menu
+========================================= */
 
 // Hamerburger Button
 
@@ -52,6 +51,10 @@
   html.mm-opening #hamburger::after  { transform: rotate(-45deg); }
 
 }
+
+// Fix for Foundation
+
+.mm-list [class*=column]+[class*=column]:last-child { float: none !important; }
 
 ////////////////////////////////////////////
 // Menu Variables ---------------------- //
