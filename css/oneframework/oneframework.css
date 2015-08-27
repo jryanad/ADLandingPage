@@ -1242,7 +1242,7 @@ input[type="search"] {
 
 .hero-body-content {
   color: #fff;
-  font-size: 40px;
+  font-size: 25.6px;
   font-weight: 300;
 }
 
@@ -1252,7 +1252,7 @@ input[type="search"] {
 
 .product-img-wrap {
   position: relative;
-  bottom: -260px;
+  bottom: -250px;
   z-index: 10;
 }
 

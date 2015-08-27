@@ -54,7 +54,7 @@
 .hero-content-container { padding-top: 160px; }
 .hero-body-content { 
 	color: #ffffff; 
-	font-size: 38px;
+	font-size: 26px;
 	font-weight: 300;
 }
 
@@ -62,7 +62,7 @@
 
 .product-img-wrap {
 	position: relative;
-	bottom: -260px;
+	bottom: -250px;
 	z-index: 10;
 }
 
