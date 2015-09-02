@@ -57,14 +57,13 @@
 
 .jump-nav { 
   padding: 22px 0 0;
-  float: right;
 }
 .jump-nav a {
-  color: $white - 15;
+  color: $white;
   display: inline-block;
 }
 .jump-nav a:hover {
-  color: $white;
+  color: darken($white, 2%);
 }
 
 .hero-content-container { padding-top: 160px; }
