@@ -1179,6 +1179,8 @@ input[type="search"] {
 
 .header-call-container {
   padding: 22px 0 0;
+  float: left;
+  margin-right: 20px;
 }
 
 .header-call-container a {
@@ -1238,10 +1240,12 @@ input[type="search"] {
 
 .jump-nav {
   padding: 22px 0 0;
+  float: right;
 }
 
 .jump-nav a {
   color: #f0f0f0;
+  display: inline-block;
 }
 
 .jump-nav a:hover {
@@ -1451,8 +1455,9 @@ ul.product-list li i {
     padding-bottom: 0px;
   }
 
-  .header-call-container {
+  .header-call-container, .jump-nav {
     text-align: center;
+    float: none;
   }
 
   .top-social-icons {
@@ -1491,6 +1496,10 @@ ul.product-list li i {
   }
 }
 @media only screen and (max-width: 479px) {
+  .jump-nav a {
+    font-size: 15px;
+  }
+
   .top-social-icons ul li a,
   .bottom-social-icons ul li a {
     margin: 0 10px 10px 10px;
