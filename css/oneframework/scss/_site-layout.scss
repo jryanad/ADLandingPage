@@ -55,6 +55,14 @@
 .top-social-icons ul li a:hover { background-color: $white; }
 .bottom-social-icons ul li a:hover { background-color: lighten($primary-accent-color, 5%); }
 
+.jump-nav { padding: 22px 0 0;}
+.jump-nav a {
+  color: $white - 15;
+}
+.jump-nav a:hover {
+  color: $white;
+}
+
 .hero-content-container { padding-top: 160px; }
 .hero-body-content { 
   color: $white; 

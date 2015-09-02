@@ -1236,6 +1236,18 @@ input[type="search"] {
   background-color: #00d3ee;
 }
 
+.jump-nav {
+  padding: 22px 0 0;
+}
+
+.jump-nav a {
+  color: #f0f0f0;
+}
+
+.jump-nav a:hover {
+  color: #fff;
+}
+
 .hero-content-container {
   padding-top: 160px;
 }
