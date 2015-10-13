@@ -53,7 +53,7 @@ if($post) {
 
 
 	if(!$error) {
-		$message = "Name: $name\n\nEmail: $email\n\nSubject: $subject\n\nPhone Number: $phone\n\nComments: $comments”;
+		$message = "Name: $name\n\nEmail: $email\n\nSubject: $subject\n\nPhone Number: $phone\n\nComments: $comments";
 		$mail = mail(WEBMASTER_EMAIL, $subject, $message,
 		     "From: ".$email."\r\n"
 		     ."Reply-To: ".REPLY_TO."\r\n"
